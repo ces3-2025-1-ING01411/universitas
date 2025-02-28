@@ -1,0 +1,144 @@
+body {
+    background: #D9E7FF;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.main1 {
+    height: 70%;
+    width: 90%;
+    background: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.mainHeader {
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    height: 10%;
+    width: 100%;
+}
+
+.containerHeader1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 20%;
+}
+
+.containerHeader2 {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1, .item2, .item3 {
+    height: 25px;
+    width: 25px;
+    border-radius: 12px;
+}
+
+.item1 {
+    background-color: red;
+}
+
+.item2 {
+    background-color: #ffff1f;
+}
+
+.item3 {
+    background-color: rgba(85, 245, 85, 0.99);
+}
+
+.titleHeader {
+    background-color: #000;
+    color: #0f0;
+    /**
+    font-family: monospace;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+
+     */
+
+    font-size: 30px;
+
+}
+
+.press-start-2p-regular {
+    color: #0f0;
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.mainBody{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+    font-size: 20px;
+    margin-left: 20%;
+    box-sizing: border-box;
+}
+
+@keyframes wave {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); } /* Sube */
+    100% { transform: translateY(0); }
+}
+
+.textOptions span {
+    display: inline-block;
+    animation: wave 1s ease-in-out infinite;
+    box-sizing: border-box;
+}
+
+.mainText {
+    display: inline-block;
+    font-size: 20px;
+    color: #0f0;
+    transition: color 0.3s ease, transform 0.3s ease;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.accessGranted:hover {
+    color: #a020f0;
+    transform: scale(1.2);
+}
+
+.connectingServer:hover {
+    color: #FF0A99;
+    transform: scale(1.2);
+}
+
+.userRole:hover {
+    color: #FFF01B;
+    transform: scale(1.2);
+}
+
+.status:hover {
+    color: #2856FF;
+    transform: scale(1.2);
+}
